@@ -1,29 +1,26 @@
-# talesludos-frontend
+# Tales Ludos Frontend (Vue.js)
 
-This template should help get you started developing with Vue 3 in Vite.
+Frontend adaptado à Refatoração da plataforma educacional *Tales Ludos*. Esta versão realiza chamadas ao [backend refatorado](https://github.com/ElDoardo/talesludos-backend.git) através de requisições HTTP.
+ 
 
-## Recommended IDE Setup
+##  Como Executar o Projeto
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### 1. Clonar o repositório
+```bash
+git clone https://github.com/ElDoardo/talesludos-frontend.git
+```
 
-## Customize configuration
+### 2. Entrar no diretório
+```bash
+cd talesludos-frontend
+```
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
+### 3. Instalar dependências
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
+### 4. Executar o servidor em ambiente de desenvolvimento
+```bash
+npm run serve
 ```
