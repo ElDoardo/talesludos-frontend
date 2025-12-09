@@ -83,18 +83,18 @@ export default {
     this.$store
       .dispatch("login", this.form)
       .then(() => {
-        self.$snotify.success("Sucesso ao logar", "OK");
+        this.$snotify.success("Sucesso ao logar", "OK");
         self.$router.push({ name: "JourneyList" });
       })
       .catch(error => {
         if (error.errors) {
           // Erros de validação da API
-          self.errors = error.errors;
+          this.errors = error.errors;
         } else {
           // Outros erros
-          self.error = error.message || "Ocorreu um erro ao tentar fazer login";
+          this.error = error.message || "Ocorreu um erro ao tentar fazer login";
         }
-        self.$snotify.error("Falha ao logar no sistema", "Erro");
+        this.$snotify.error("Falha ao logar no sistema", "Erro");
       });
   }
 }
